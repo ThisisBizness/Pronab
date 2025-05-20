@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রসায়ন সহায়িকা</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <img src="https://cdn.discordapp.com/attachments/1098691297054822590/1374343650791919686/ChatGPT_Image_May_20_2025_04_40_30_PM.png?ex=682db4c4&is=682c6344&hm=58f02facbb47f8bcb16add5d1b0f381eab9a38c5a631e58d87d401be0c120c92&" alt="Chemistry Logo" class="header-logo">
+                <h1>Chemistry Classes</h1>
+            </div>
+            <p>আপনার রসায়ন প্রশ্নের উত্তর পান</p>
+        </header>
+
+        <main class="main-content">
+            <div class="question-area">
+                <textarea id="user-question" placeholder="আপনার রসায়নের প্রশ্নটি এখানে লিখুন..." rows="4"></textarea>
+                <button id="submit-button" title="প্রশ্ন জমা দিন">জমা দিন</button>
+            </div>
+
+            <div class="answer-section" id="answer-section" style="display: none;">
+                <h2>উত্তর:</h2>
+                <div id="answer-box" class="answer-box">
+                    </div>
+                <div class="action-buttons">
+                    <button id="regenerate-button" title="উত্তরটি পুনরায় তৈরি করুন">পুনরায় তৈরি করুন</button>
+                    <button id="simplify-button" title="উত্তরটি আরও সহজ করুন">আরও সহজ করুন</button>
+                </div>
+            </div>
+             <div id="loading-indicator" class="loading-indicator" style="display: none;">
+                <div class="spinner"></div>
+                <p>লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+            </div>
+            <div id="error-message" class="error-message" style="display: none;">
+                </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>...</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html> 

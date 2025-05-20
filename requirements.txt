@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+google-generativeai
+python-dotenv
+# aiohttp is usually a sub-dependency of google-generativeai, but can be listed 
