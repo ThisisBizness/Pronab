@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রসায়ন সহায়িকা - Pronab Sarkar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="app-header-main">
+            <div class="logo-title">
+                <img src="/static/logo.png" alt="রসায়ন সহায়িকা লোগো" class="logo-img"> <div>
+                    <h1>Chemistry Helper</h1>
+                    <p class="subtitle">একাদশ ও দ্বাদশ শ্রেণীর জন্য</p>
+                </div>
+            </div>
+            <div class="owner-info">
+                <p><i class="fas fa-user-tie"></i> <strong>প্রণব সরকার (Pronab Sarkar)</strong></p>
+                <p><i class="fas fa-phone-alt"></i> Phone: 8906663447, 6296024737</p>
+                <p><i class="fas fa-info-circle"></i>Raiganj, Milan Para, Near Sudeb Saha's Chamber, Bidrohimor</p>
+            </div>
+        </header>
+
+        <main class="main-content-area">
+            <div class="interaction-wrapper">
+                <div class="input-panel">
+                    <h2>আপনার প্রশ্ন?</h2>
+                    <textarea id="user-question" placeholder="আপনার রসায়নের প্রশ্নটি এখানে লিখুন..." rows="4"></textarea>
+                    
+                    <div class="file-input-area">
+                        <label for="image-upload" class="file-upload-label">
+                            <i class="fas fa-image"></i> প্রশ্নের ছবি আপলোড করুন (যদি থাকে)
+                        </label>
+                        <input type="file" id="image-upload" accept="image/*">
+                    </div>
+                    <div id="image-preview-box" class="image-preview-box" style="display:none;">
+                        <img id="image-preview-content" src="#" alt="Image Preview"/>
+                        <button id="remove-image-btn" title="ছবি সরান">&times;</button>
+                    </div>
+                    
+                    <button id="submit-question-btn" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> উত্তর পান
+                    </button>
+                </div>
+
+                <div class="output-panel">
+                    <div id="loading-spinner" class="loading-spinner" style="display: none;">
+                        <div class="spinner-icon"></div>
+                        <p>লোড হচ্ছে...</p>
+                    </div>
+                    
+                    <div id="error-display" class="error-display" style="display: none;">
+                        </div>
+
+                    <div class="answer-display-area" id="answer-display-area" style="display: none;">
+                        <h3><i class="fas fa-lightbulb"></i> উত্তর:</h3>
+                        <div id="answer-content-box" class="answer-content-box">
+                            </div>
+                        <div class="follow-up-actions">
+                            <button id="regenerate-answer-btn" class="action-btn"><i class="fas fa-redo-alt"></i> আবার বলুন</button>
+                            <button id="simplify-answer-btn" class="action-btn"><i class="fas fa-compress-alt"></i> আরও সোজা করুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer-main">
+            <p>&copy; ۲۰۲۵ রসায়ন সহায়িকা (Pronab Sarkar)। সর্বস্বত্ব সংরক্ষিত।</p>
+            <p></p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html> 
